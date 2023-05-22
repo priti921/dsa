@@ -8,7 +8,6 @@ const { SinglyLinkedList } = require("./SinglyLinkedList");
 //
 //   return hashedKey & size;
 // }
-
 class HashTable {
   //default size if not passed any
   constructor(hashTableSize = 32) {
@@ -106,3 +105,5 @@ newHashTable.set("hi", "there");
 newHashTable.set("hellow", "world");
 newHashTable.set("bye", "world");
 console.log(newHashTable.getKeys());
+
+module.exports = HashTable
