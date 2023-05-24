@@ -227,4 +227,29 @@ class DoublyLinkedList {
 
     return this;
   }
+
+  print() {
+    let curr = this.head;
+    let prev = null;
+    let output = "HEAD";
+
+    while (curr) {
+
+      if (curr.next) {
+        output += "->";
+      }
+
+      output += curr.value;
+
+      if (curr.previous === prev) {
+        output += "<-";
+      }
+
+      prev = curr;
+      curr = curr.next;
+    }
+
+    output += "TAIL";
+    process.stdout.write(output);
+  }
 }
