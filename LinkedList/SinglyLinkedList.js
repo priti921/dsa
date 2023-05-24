@@ -46,21 +46,19 @@ class SinglyLinkedList {
     this.length++;
   }
 
-  append(item) {
-    const newNode = new Node(item);
+  append(value) {
+    const newNode = new Node(value)
     if (!this.head) {
-      this.head = newNode;
+      this.head = newNode
     } else {
-      let currentNode = this.head;
-      let prevNode;
-      while (currentNode) {
-        prevNode = currentNode;
-        currentNode = currentNode?.next;
+      let curr = this.head
+      while (curr.next) {
+        curr = curr.next
       }
-      prevNode && (prevNode.next = newNode);
+      curr.next = newNode
     }
-
-    this.length++;
+    this.length++
+    return this
   }
 
   remove(item) {
