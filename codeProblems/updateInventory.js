@@ -1,3 +1,4 @@
+
 // Example inventory lists
 var curInv = [
   [21, "Bowling Ball"],
