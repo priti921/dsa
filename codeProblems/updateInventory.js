@@ -1,3 +1,24 @@
+function updateInventory(arr1, arr2) {
+  let inventory = arr1.reduce((obj, [quan, item]) => {
+    obj[item] = quan
+    return obj
+  }, {})
+
+
+  for (let [quan, item] of arr2) {
+    if (item in inventory) {
+      inventory[item] += quan
+    } else {
+      inventory[item] = quan
+    }
+  }
+
+  const updatedInventory = Object.entries(inventory).map(([item, quan]) => [quan, item])
+  updatedInventory.sort((a, b) => a[1].localeCompare(b[1]))
+  return updatedInventory
+
+}
+
 
 // Example inventory lists
 var curInv = [
