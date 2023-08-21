@@ -1,0 +1,103 @@
+    What is Multiple Assignment?; "Multiple Assignment allows you to assign multiple values to multiple variables in a single line. Example: x, y, z = 1, 2, 3."
+
+    Give an example of a String Method.; "String methods are functions that can be applied to strings. Example: text = 'Hello'.upper() converts 'Hello' to uppercase."
+
+    How do you perform Type Casting in Python?; "Type casting is the process of converting one data type to another. Example: int('42') converts the string '42' to an integer."
+
+    How can you take User Input in Python?; "You can use the input() function to receive user input. Example: name = input('Enter your name: ')."
+
+    What are Math Functions in Python?; "Math functions perform mathematical operations. Example: import math; sqrt_result = math.sqrt(16) returns the square root of 16."
+
+    What is String Slicing?; "String slicing is extracting a portion of a string by specifying a start and end index. Example: text = 'Python'; sliced = text[1:4] slices 'yth'."
+
+    How do While Loops work in Python?; "While loops repeat a block of code as long as a condition is true. Example: while count < 5:."
+
+    How do For Loops work in Python?; "For loops iterate over a sequence (such as a list) and execute a block of code for each item. Example: for item in my_list:."
+
+    What is a Nested Loop?; "A nested loop is a loop inside another loop. Example: for i in range(3): for j in range(3):."
+
+    How do you use Break, Continue, and Pass in loops?; "Break exits a loop, Continue skips the current iteration, and Pass is a placeholder. Example: for i in range(5): if i == 3: break."
+
+    What is a List in Python?; "A list is an ordered collection of items that can be of any data type. Example: my_list = [1, 'apple', True]."
+
+    What is a 2D List?; "A 2D list is a list of lists, creating a grid-like structure. Example: matrix = [[1, 2], [3, 4]]."
+
+    What is a Tuple in Python?; "A tuple is an ordered, immutable collection of items. Example: my_tuple = (1, 'banana', 3.14)."
+
+    Define a Set in Python.; "A set is an unordered collection of unique items. Example: my_set = {1, 2, 3}."
+
+    What is a Dictionary in Python?; "A dictionary is an unordered collection of key-value pairs. Example: my_dict = {'name': 'Alice', 'age': 30}."
+
+    How does Indexing work in Python?; "Indexing allows you to access specific items in a sequence like lists or strings. Example: my_list[2] retrieves the third item."
+
+    What is a Function in Python?; "A function is a block of reusable code that performs a specific task. Example: def greet(name):."
+
+    What does the Return Statement do in a function?; "The return statement specifies what a function should return as its result. Example: def add(a, b): return a + b."
+
+    What are Keyword Arguments in Python?; "Keyword arguments are passed to a function with a keyword and a value. Example: print(end=' ', sep=', ')."
+
+    What are *args in Python functions?; "*args is used to pass a variable number of non-keyword arguments to a function. Example: def print_args(*args):."
+
+    Explain **kwargs in Python functions.; "**kwargs is used to pass a variable number of keyword arguments to a function. Example: def print_kwargs(**kwargs):."
+
+    How can you format strings in Python?; "String formatting allows you to create formatted strings using placeholders. Example: name = 'Alice'; message = f'Hello, {name}'."
+
+    How do you generate Random Numbers in Python?; "The random module provides functions for generating random numbers. Example: import random; random_number = random.randint(1, 100)."
+
+    What is Exception Handling?; "Exception handling is a mechanism to handle errors or exceptions in code. Example: try:."
+
+    How do you detect if a File exists in Python?; "You can use the os.path.exists() function to check if a file exists. Example: import os; if os.path.exists('file.txt'):."
+
+    How do you Read a File in Python?; "You can use the open() function to read a file. Example: with open('file.txt', 'r') as file:."
+
+    How do you Write to a File in Python?; "You can use the open() function with the 'w' mode to write to a file. Example: with open('file.txt', 'w') as file:."
+
+    How do you Copy a File in Python?; "You can use the shutil.copy() function to copy a file. Example: import shutil; shutil.copy('source.txt', 'destination.txt')."
+
+    How do you Move a File in Python?; "You can use the shutil.move() function to move a file. Example: import shutil; shutil.move('source.txt', 'destination.txt')."
+
+    How do you Delete a File in Python?; "You can use the os.remove() function to delete a file. Example: import os; os.remove('file.txt')."
+
+    What are Modules in Python?; "Modules are Python files containing functions and variables that can be reused. Example: import math."
+
+    How do you play Rock, Paper, Scissors Game in Python?; "You can create a Rock, Paper, Scissors game using conditional statements. Example: if player_choice == 'rock' and computer_choice == 'scissors':."
+
+    How can you create a Quiz Game in Python?; "You can create a Quiz Game by asking questions and checking answers. Example: if user_answer == correct_answer:."
+
+    What is Object-Oriented Programming (OOP)?; "OOP is a programming paradigm that uses objects to model real-world entities. Example: class Dog:."
+
+    What are Class Variables in Python?; "Class variables are shared among all instances of a class. Example: class Circle: pi = 3.14."
+
+    Explain Inheritance in Python.; "Inheritance allows a class to inherit attributes and methods from another class. Example: class ChildClass(ParentClass):."
+
+    What is Multilevel Inheritance?; "Multilevel inheritance is a type of inheritance where a derived class inherits from another derived class. Example: class Grandchild(Parent, Child):."
+
+    What is Multiple Inheritance?; "Multiple inheritance is when a class inherits from multiple base classes. Example: class ChildClass(Parent1, Parent2):."
+
+    What is Method Overriding?; "Method overriding is the process of providing a new implementation for a base class method in a derived class. Example: class Child(Parent): def some_method(self):."
+
+    What is Method Chaining?; "Method chaining is calling multiple methods on an object in a single line. Example: my_object.method1().method2().method3()."
+
+    What is the Super Function in Python?; "The super() function is used to call a method from a parent class. Example: super().__init__(name)."
+
+    How can you use Abstract Classes in Python?; "Abstract classes are classes that cannot be instantiated and are meant to be subclassed. Example: from abc import ABC, abstractmethod."
+
+    How can you pass Objects as Arguments to functions in Python?; "You can pass objects as arguments to functions just like any other data type. Example: def print_details(person):."
+
+    What is Duck Typing in Python?; "Duck typing is a concept where the type or class of an object is determined by its behavior. Example: if hasattr(obj, 'quack'): obj.quack()."
+
+    What does the Walrus Operator (:=) do in Python?; "The walrus operator assigns a value to a variable as part of an expression. Example: while (line := file.readline())."
+
+    How can you assign Functions to Variables in Python?; "You can assign a function to a variable just like any other value. Example: my_function = function_name."
+
+    What are Higher Order Functions in Python?; "Higher order functions are functions that operate on other functions. Example: map(function, iterable)."
+
+    What are Lambda Functions in Python?; "Lambda functions are small, anonymous functions defined using the lambda keyword. Example: lambda x: x * 2."
+
+    How can you use the Sort function in Python?; "The sort() function is used to sort lists in ascending order. Example: my_list.sort()."
+
+    How do you use the Map function in Python?; "The map() function applies a given function to all items in an iterable. Example: result = map(function, iterable)."
+
+    How does the Filter function work in Python?; "The filter() function filters elements of an iterable based on a given function. Example: result = filter(function, iterable)."
+
+    What does the Reduce function do in Python?; "The reduce() function applies a function cumulatively to the items of an iterable. Example: from functools import reduce; result = reduce(function, iterable)."
