@@ -2,16 +2,16 @@
 def selectionSort(arr):
     size = len(arr)
 
-    for step in range(size):
-        minIdx = step
+    for i in range(size):
+        minIdx = i
 
         #find min val
-        for i in range(step + 1, size):
-            if arr[i] < arr[minIdx]:
-                minIdx = i #swap the minIdx to i
+        for j in range(i + 1, size):
+            if arr[j] < arr[minIdx]:
+                minIdx = j #swap the minIdx to i
 
         #set minVal to currect index
-        (arr[step], arr[minIdx]) = (arr[minIdx], arr[step])
+        (arr[i], arr[minIdx]) = (arr[minIdx], arr[i])
 
 data = [-2, 45, 0, 11, -9]
 

@@ -1,7 +1,9 @@
+# best: O(n), worst: O(n^2), Avg: O(n^2), space complexity: O(1)
+
 def insertionSort(arr):
-    for step in range(1, len(arr)): #skip the first index
-        key = arr[step] #starting with 1 index
-        j = step - 1 # index right before step
+    for i in range(1, len(arr)): #skip the first index
+        key = arr[i] #starting with 1 index
+        j = i - 1 # index right before step
 
         #compare left to right
         while j >= 0 and key < arr[j]:
